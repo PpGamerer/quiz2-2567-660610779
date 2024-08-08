@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import PostOwnner from "@/components/PostOwnner";
 import Comment from "@/components/Comment";
 import { comments } from "@/libs/comments";
-import { CommentProps, ReplyProps } from "@/libs/types";
+import { CommentProps } from "@/libs/types";
 
 export default function Home() {
   
