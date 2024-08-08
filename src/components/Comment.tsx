@@ -1,7 +1,6 @@
 "use client";
 import { CommentProps, ReplyProps } from "@/libs/types";
 import Reply from "./Reply";
-import { useState } from "react";
 
 export default function Comment({
   userImagePath,

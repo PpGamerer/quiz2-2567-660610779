@@ -1,6 +1,5 @@
 "use client";
 import { ReplyProps } from "@/libs/types";
-import { useState } from "react";
 export default function Reply({ userImagePath, username, replyText, likeNum }:ReplyProps) {
   let isZero:boolean = false;
     if(likeNum>0){
