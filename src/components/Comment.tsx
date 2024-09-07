@@ -38,7 +38,8 @@ export default function Comment({
             }
           </div>
         </div>
-      {replies?.map((reply, index) => reply ? (<Reply key={reply.username} {...reply} />) : null)}
+      {/* {replies.map((reply:ReplyProps) => (<Reply key={reply.username} {...reply} />))} */}
+      {replies?.map((reply) =>   reply && ( <Reply key={reply.username} {...reply} />  ))}
     </div>
   );
 }
