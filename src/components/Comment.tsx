@@ -7,7 +7,7 @@ export default function Comment({
   username,
   commentText,
   likeNum,
-  replies,
+  replies = [],
 }: CommentProps) {
   let isZero:boolean = false;
     if(likeNum>0){
@@ -38,7 +38,7 @@ export default function Comment({
             }
           </div>
         </div>
-      {replies.map((reply:ReplyProps) => (<Reply key={reply.username} {...reply} />))}
+      {replies?.map((reply, index) => reply ? (<Reply key={reply.username} {...reply} />) : null)}
     </div>
   );
 }
