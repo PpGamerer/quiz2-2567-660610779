@@ -2,7 +2,6 @@
 // Do not forget to export properly.
 
 interface ReplyProps {
-    map(arg0: (reply: ReplyProps) => import("react").JSX.Element): import("react").ReactNode;
     username: string;
     userImagePath: string;
     replyText: string;
@@ -23,6 +22,6 @@ interface CommentProps {
     username: string;
     commentText:string;
     likeNum:number;
-    replies:ReplyProps;
+    replies:(ReplyProps | undefined)[];
 }
 export type { CommentProps };

@@ -29,7 +29,7 @@ export default function Home() {
         
 
         {/* map-loop render Comment component here */}
-        {comments.map((comment: CommentProps) => (<Comment key={comment.replies.username} {...comment}/>))}
+        {comments.map((comment: CommentProps) => (<Comment key={comment.username} {...comment}/>))}
       </div>
     </div>
   );
